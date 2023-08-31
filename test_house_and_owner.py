@@ -2,7 +2,7 @@ import pytest
 from house_and_owner import House, HomeOwner
 
 class TestHouseOwner:
-
+    # tested beide Klassen
     @pytest.fixture
     def house(self):
         return House('Landhaus')
