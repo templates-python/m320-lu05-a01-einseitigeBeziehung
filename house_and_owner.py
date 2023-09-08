@@ -1,27 +1,27 @@
 class House:
-    '''
+    """
     Die Klasse gibt einzig den Typ eines Hauses zurück.
-    '''
+    """
 
     def __init__(self, name):
-        '''
+        """
         Legt den Typ des Hauses fest
-        '''
+        """
         self._type = name
 
     @property
     def type(self):
-        '''
+        """
         Liefert den Typ des Hauses
         :return: Typ des Hauses
-        '''
+        """
         return self._type
 
 
 class HomeOwner:
-    '''
+    """
     Ein Hausbesitzer. Er wird durch seinen Namen benannt und kann den Typ seines Hauses bekannt geben
-    '''
+    """
 
     def __init__(self, name, house):
         '''
@@ -37,9 +37,9 @@ class HomeOwner:
         return self._name
 
     def print(self):
-        '''
+        """
         gibt die Infos zum Hausbesitzer und seinem Haus aus.
-        '''
+        """
         print(f'{self._name} besitzt ein {self._my_house.type}')  # Der owner kan die Referenz nutzen.
 
 
